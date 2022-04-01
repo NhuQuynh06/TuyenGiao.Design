@@ -1,6 +1,27 @@
 .page-footer {
-    background-color: #e7e7e7;
-    overflow: auto;
-    padding: 30px 20px;
-    position: relative;
+    background: #6B0001;
+    padding: 20px 0 13px;
+
+    .top-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .top-wrapper,
+    .bottom-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-wrapper {
+        font-size: 0;
+        width: 318px;
+        height: 86px;
+        display: block;
+        background: url(../img/logo-footer-tuyengiao.png) center center/318px no-repeat;
+    }
+
+    .content-right {
+        text-align: right;
+    }
 }

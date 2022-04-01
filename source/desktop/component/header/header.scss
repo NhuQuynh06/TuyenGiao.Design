@@ -1,37 +1,202 @@
 .page-header {
-    height: 40px;
-    background: $primary;
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-.top-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
+    height: 205px;
+    width: 100%;
+    display: block;
+    background: url(../img/bg-header.png) center top/100% no-repeat;
 
-    time,
-    ul a {
-        font-style: normal;
-        font-weight: $font-weight-semibold;
+    .top-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        height: 51px;
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .time {
+        font-weight: $font-weight-normal;
         font-size: 12px;
-        line-height: 15px;
-        color: $white;
+        line-height: 14px;
+        color: #FFFFFF;
+        padding-top: 8px;
         display: block;
     }
-    ul {
+
+    .wrapper {
+        display: flex;
+    }
+
+    .search-wrapper {
+        position: relative;
+
+        i {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: right;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: absolute;
+            right: 0;
+            padding: 8px 15px;
+        }
+    }
+
+    input {
+        width: 180px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 40px;
+        border: none;
+        outline: none;
+        font-weight: $font-weight-normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+
+        &::placeholder {
+            font-weight: $font-weight-normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+        }
+
+    }
+
+    .account-wrapper {
         display: flex;
         align-items: center;
-        li:last-child {
+        margin-left: 5px;
+
+        li:first-child {
             a {
-                padding: 13px 0 13px 12px;
+                &::before {
+                    display: none;
+                }
             }
         }
+
         a {
-            padding: 13px 12px;
-            &:hover {
-                color: #ddd;
+            font-weight: $font-weight-normal;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 5px;
+            position: relative;
+
+
+
+            &::before {
+                position: absolute;
+                content: '/';
+                right: 3px;
+                top: 5px;
+                width: 100%;
+                display: block;
             }
         }
     }
+
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 8px;
+        justify-content: center;
+    }
+
+    .logo {
+        background: url(../img/logo-tuyengiao.png) center center/408px no-repeat;
+        width: 408px;
+        height: 110px;
+        display: block;
+        font-size: 0;
+    }
+
+    .nav-wrapper {
+        width: calc(100% - 40px);
+        height: 50px;
+        background: #FECE26;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        a {
+            font-weight: $font-weight-medium;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #413836;
+            padding: 15px 11px;
+
+            &:hover,
+            &.active {
+                color: #6B0001;
+            }
+        }
+
+        .home,
+        .humburger {
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .humburger-wrapper {
+            padding: 10px 10px 10px 0;
+
+            &:hover .nav-sub {
+                display: block;
+            }
+        }
+
+        .humburger {
+            background: #F8C100;
+            margin-left: 10px;
+            position: relative;
+
+            i {
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #413836;
+            }
+        }
+
+        .home {
+            background: rgba(255, 255, 255, 0.8);
+            margin-right: 10px;
+
+            i {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #E33A3C;
+            }
+        }
+
+        .nav-sub {
+            position: absolute;
+            width: calc(100% - 40px);
+            right: 20px;
+            margin-top: 5px;
+            background: #F7F7F7;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 0px 3px 3px;
+            z-index: 1;
+            padding: 30px 115px;
+            display: none;
+            transition: 0.5s;
+        }
+    }
+
 }

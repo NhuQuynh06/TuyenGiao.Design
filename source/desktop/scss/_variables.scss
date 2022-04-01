@@ -4,22 +4,20 @@ html {
 }
 
 $body-bg: #fff;
-$body-color: #870110;
-$font-family-sans-serif: 'Quicksand';
-$font-family-serif: 'Quicksand';
+$body-color: #fff !important;
+$font-family-sans-serif: 'Roboto';
+$font-family-serif: 'Roboto';
 // sans-serif;
 $font-size-base: 1.4rem; // base on paragraphs in detail page
 // $line-height-base: 2.2;
 
 
 // add color to color maps
-$primary: #870110;
-// text color
-$secondary: #212529;
+$primary: #413836;
+$secondary: #888888;
 $third: #DC3545;
 $dark: #212529;
 $light: #e9ecef;
-$link-hover: $primary;
 
 
 
@@ -1212,6 +1210,7 @@ $caret-width: .25em;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
+$font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;

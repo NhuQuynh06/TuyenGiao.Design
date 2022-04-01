@@ -183,7 +183,7 @@ gulp.task('fileinclude', function () {
 async function watch_dev() {
     browserSync.init({
         server: "./",
-        startPath: "dist/mobile/html/index.html",
+        startPath: "dist/desktop/html/index.html",
         browser: 'chrome',
         host: 'localhost',
         port: 3000,
