@@ -1,0 +1,133 @@
+.icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon_ver2 {
+    width: 25px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: -3px;
+}
+
+.icon {
+
+    &-report {
+        background: url(../img/icon-report.png) center center no-repeat;
+    }
+
+    &-mobile {
+        background: url(../img/icon-mobile.png) center center no-repeat;
+    }
+
+    &-qoute {
+        background: url(../img/icon-qoute.png) center center no-repeat;
+    }
+
+    &-facebook {
+        background: url(../img/icon-facebook.png) center center no-repeat;
+    }
+
+    &-twitter {
+        background: url(../img/icon-twitter.png) center center no-repeat;
+    }
+
+    &-mail {
+        background: url(../img/icon-mail.png) center center no-repeat;
+    }
+
+    &-video {
+        background: url(../img/icon-video.png) center center no-repeat;
+    }
+
+    &-photo {
+        background: url(../img/icon-photo.png) center center no-repeat;
+    }
+
+    &-goal {
+        background: url(../img/icon-goal.png) center center no-repeat;
+    }
+
+    &-conner {
+        background: url(../img/icon-conner.png) center center no-repeat;
+    }
+
+    &-yellow {
+        background: url(../img/icon-yellow.png) center center no-repeat;
+    }
+
+    &-red {
+        background: url(../img/icon-red.png) center center no-repeat;
+    }
+
+    &-substitute {
+        background: url(../img/icon-substitute.png) center center no-repeat;
+    }
+
+    &-start {
+        background: url(../img/icon-start.png) center center no-repeat;
+    }
+
+    &-tatic {
+        background: url(../img/icon-tatic.png) center center no-repeat;
+    }
+
+    &-stadium {
+        background: url(../img/icon-stadium.png) center center no-repeat;
+    }
+
+    &-time {
+        background: url(../img/icon-time.png) center center no-repeat;
+    }
+
+    &-fault {
+        background: url(../img/icon-fault.png) center center no-repeat;
+    }
+
+    &-jnjure {
+        background: url(../img/icon-jnjure.png) center center no-repeat;
+    }
+
+    &-penalty {
+        background: url(../img/icon-penalty.png) center center no-repeat;
+    }
+
+    &_eM {
+        background: url(../img/icon_eM.png) center center no-repeat;
+    }
+
+    &_live {
+        background: url(../img/icon_live.png) center center no-repeat;
+    }
+
+    &_live_ver2 {
+        background: url(../img/icon_live_ver2.png) center center no-repeat;
+    }
+
+    &_longform {
+        background: url(../img/icon_longform.png) center center no-repeat;
+    }
+
+    &_audio {
+        background: url(../img/icon-audio.png) center center no-repeat;
+    }
+
+    &_chart {
+        background: url(../img/icon-chart.png) center center no-repeat;
+    }
+
+    &_img {
+        background: url(../img/icon-img.png) center center no-repeat;
+    }
+
+    &_mess {
+        background: url(../img/icon-mess.png) center center no-repeat;
+    }
+
+    &_video_ver2 {
+        background: url(../img/icon-video_ver2.png) center center no-repeat;
+    }
+}

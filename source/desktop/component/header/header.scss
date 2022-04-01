@@ -1,0 +1,37 @@
+.page-header {
+    height: 40px;
+    background: $primary;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+
+    time,
+    ul a {
+        font-style: normal;
+        font-weight: $font-weight-semibold;
+        font-size: 12px;
+        line-height: 15px;
+        color: $white;
+        display: block;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li:last-child {
+            a {
+                padding: 13px 0 13px 12px;
+            }
+        }
+        a {
+            padding: 13px 12px;
+            &:hover {
+                color: #ddd;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// style index ( momentary )
+.index-page {
+  .heading {
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-top: 40px;
+
+    li {
+      list-style-type: space-counter;
+    }
+
+    a {
+      font-size: 16px;
+      text-transform: capitalize;
+      padding-left: 10px;
+    }
+
+  }
+}
+
+// main style
+body {
+  font-size: 14px;
+}

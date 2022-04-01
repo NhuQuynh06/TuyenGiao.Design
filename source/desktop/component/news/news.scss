@@ -1,0 +1,38 @@
+.news {
+  .heading {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $primary;
+    position: relative;
+    display: block;
+    padding-bottom: 13px;
+  }
+
+  .story {
+    &__thumb {
+      width: 693px;
+      height: 389.81px;
+    }
+
+    &__heading a {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      padding-top: 1.6rem;
+    }
+
+    &__summary {
+      margin-top: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 22px;
+      color: #6c757d;
+    }
+  }
+}
