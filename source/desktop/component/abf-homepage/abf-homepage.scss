@@ -1,0 +1,24 @@
+.abf-homepage {
+    display: flex;
+    justify-content: space-between;
+    .content-left {
+        width: 870px;
+    }
+    .content-right {
+        width: 270px;
+    }
+    .bottom-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .story {
+            width: 270px;
+
+           &__thumb {
+            height: 180px;
+            width: 270px;
+            
+           }
+           &__heading a {}
+        }
+    }
+}

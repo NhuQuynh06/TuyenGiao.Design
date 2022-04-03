@@ -17,7 +17,7 @@
         font-weight: $font-weight-normal;
         font-size: 12px;
         line-height: 14px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding-top: 8px;
         display: block;
     }
@@ -35,7 +35,7 @@
             line-height: 14px;
             text-align: right;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: #ffffff;
             position: absolute;
             right: 0;
             padding: 8px 15px;
@@ -54,15 +54,14 @@
         font-weight: $font-weight-normal;
         font-size: 12px;
         line-height: 14px;
-        color: #FFFFFF;
+        color: #ffffff;
 
         &::placeholder {
             font-weight: $font-weight-normal;
             font-size: 12px;
             line-height: 14px;
-            color: #FFFFFF;
+            color: #ffffff;
         }
-
     }
 
     .account-wrapper {
@@ -84,12 +83,11 @@
             line-height: 14px;
             padding: 5px;
             position: relative;
-
-
+            color: #fff;
 
             &::before {
                 position: absolute;
-                content: '/';
+                content: "/";
                 right: 3px;
                 top: 5px;
                 width: 100%;
@@ -117,7 +115,7 @@
     .nav-wrapper {
         width: calc(100% - 40px);
         height: 50px;
-        background: #FECE26;
+        background: #fece26;
         border-radius: 3px;
         display: flex;
         align-items: center;
@@ -130,12 +128,21 @@
             line-height: 16px;
             text-transform: uppercase;
             color: #413836;
-            padding: 15px 11px;
+            padding: 17px 11px;
+            transition: 0.5s ease;
 
             &:hover,
             &.active {
-                color: #6B0001;
+                color: #E33A3C;
+                background: rgba(255, 255, 255, 0.8);
             }
+        }
+        .home {
+            margin-right: 10px;
+        }
+
+        .humburger {
+            margin-left: 10px;
         }
 
         .home,
@@ -147,6 +154,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #f8c100;
+            position: relative;
+            transition: 0.5s ease;
+
+            i {
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #413836;
+            }
+
+            &:hover,
+            &.active {
+                background: rgba(255, 255, 255, 0.8);
+
+                i {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: #e33a3c;
+                }
+            }
         }
 
         .humburger-wrapper {
@@ -157,39 +188,12 @@
             }
         }
 
-        .humburger {
-            background: #F8C100;
-            margin-left: 10px;
-            position: relative;
-
-            i {
-                font-weight: 300;
-                font-size: 21px;
-                line-height: 21px;
-                text-transform: uppercase;
-                color: #413836;
-            }
-        }
-
-        .home {
-            background: rgba(255, 255, 255, 0.8);
-            margin-right: 10px;
-
-            i {
-                font-weight: 300;
-                font-size: 20px;
-                line-height: 20px;
-                text-transform: uppercase;
-                color: #E33A3C;
-            }
-        }
-
         .nav-sub {
             position: absolute;
             width: calc(100% - 40px);
             right: 20px;
             margin-top: 5px;
-            background: #F7F7F7;
+            background: #f7f7f7;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
             border-radius: 0px 0px 3px 3px;
             z-index: 1;
@@ -198,5 +202,4 @@
             transition: 0.5s;
         }
     }
-
 }
