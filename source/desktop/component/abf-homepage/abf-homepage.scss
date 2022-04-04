@@ -8,6 +8,24 @@
 
     .content-right {
         width: 270px;
+
+        .story {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #EEEEEE;
+
+            &:first-child {
+                margin-top: 0;
+                padding-top: 0;
+                border-top: none;
+            }
+
+            &__heading a {
+                font-weight: $font-weight-normal;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
     }
 
     .top-wrapper {
@@ -23,10 +41,24 @@
                 font-weight: $font-weight-bold;
                 font-size: 28px;
                 line-height: 36px;
-                color: #413836;
+
             }
 
-            &__summary {}
+            &__time {
+                font-weight: $font-weight-normal;
+                font-size: 13px;
+                line-height: 18px;
+                color: #888888;
+                margin-top: 10px;
+            }
+
+            &__summary {
+                font-weight: $font-weight-normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #888888;
+                margin-top: 10px;
+            }
         }
     }
 
@@ -41,10 +73,14 @@
             &__thumb {
                 height: 180px;
                 width: 270px;
-
             }
 
-            &__heading a {}
+            &__heading a {
+                padding-top: 10px;
+                font-weight: $font-weight-medium;
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
     }
 }
