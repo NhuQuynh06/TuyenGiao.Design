@@ -137,6 +137,7 @@
                 background: rgba(255, 255, 255, 0.8);
             }
         }
+
         .home {
             margin-right: 10px;
         }
@@ -185,6 +186,18 @@
 
             &:hover .nav-sub {
                 display: block;
+            }
+
+            &:hover .humburger {
+                background: rgba(255, 255, 255, 0.8);
+
+                i {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: #e33a3c;
+                }
             }
         }
 
