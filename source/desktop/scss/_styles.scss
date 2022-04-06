@@ -283,9 +283,25 @@ body {
 
   .box-content {
     padding: 14px 20px 24px;
-    
+
     .story {
       &__heading a {
+        font-weight: $font-weight-normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #222222;
+        position: relative;
+        padding-left: 14px;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: #E33A3C;
+          left: 0;
+        }
       }
     }
   }
