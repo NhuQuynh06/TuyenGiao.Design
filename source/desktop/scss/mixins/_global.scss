@@ -22,6 +22,7 @@
 }
 @mixin bottom-heading {
     position: relative;
+    width: 100%;
 
     &::after {
         position: absolute;
