@@ -17,7 +17,7 @@
 .article {
     margin: 0 auto;
 
-    > *:not(div.article__body) {
+    >*:not(div.article__body) {
         width: 770px;
         margin: 0 auto;
     }
@@ -60,14 +60,12 @@
         }
 
         .caption {
-            padding-top: $spacer-1;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 20px;
+            padding-top: 10px;
+            font-weight: $font-weight-normal;
+            font-size: 16px;
+            line-height: 26px;
             text-align: center;
-            color: #6c757d;
-            font-family: "Roboto";
+            color: #666666;
         }
 
         &[align="left"] {
@@ -301,7 +299,7 @@
             }
         }
 
-        p + table {
+        p+table {
             margin-top: 20px;
         }
 
@@ -343,6 +341,7 @@
             width: 330px;
 
             table.picture {
+
                 &[align="left"],
                 &[align="right"],
                 &[align="center"],
@@ -416,95 +415,16 @@
                 transform: translateY(-50%);
             }
         }
-
-        .iframe-wrapper {
-            width: 100%;
-            height: 41px;
-            padding: 9px 0;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            margin-top: 18px;
-        }
     }
 
     &__author {
-        width: 100%;
-        height: 86px;
-        background: #f8f9fa;
-        padding: 20px;
-        position: relative;
+        font-weight: $font-weight-bold !important;
+        text-align: right;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
+        display: block;
 
-        .list-author {
-            display: flex;
-            align-items: center;
-        }
-
-        .wrap-author {
-            height: 46px;
-            display: flex;
-            align-items: center;
-            padding-left: 33px;
-            border-left: 1px solid $border-color;
-
-            &:first-child {
-                border-left: none;
-                padding-left: 0;
-                padding-right: 33px;
-            }
-
-            .avatar {
-                overflow: hidden;
-                width: 46px;
-                height: 46px;
-                background: url(../img/img-user.png) center center no-repeat;
-                border-radius: 50%;
-                margin-right: $spacer-2;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .info-author {
-                .name {
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #495057;
-                    font-family: "Roboto";
-                }
-
-                .mail {
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 12px;
-                    line-height: 20px;
-                    color: #6c757d;
-                    font-family: "Roboto";
-                }
-            }
-        }
-
-        .text {
-            width: 85px;
-            height: 36px;
-            background: #ffffff;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 20px;
-            color: #adb5bd;
-            text-transform: uppercase;
-            font-family: "Roboto";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            left: 20px;
-            margin-bottom: 0;
-        }
     }
 
     .horizol-menu {
@@ -514,7 +434,7 @@
         margin-left: auto;
         z-index: 10;
 
-        > * {
+        >* {
             width: 30px;
             height: 30px;
             display: flex;
@@ -583,7 +503,7 @@
         display: none;
         z-index: 10;
 
-        > * {
+        >* {
             width: 40px;
             height: 40px;
             display: flex;
@@ -651,7 +571,7 @@
         display: flex;
         justify-content: space-between;
 
-        > a {
+        >a {
             width: calc(50% - 5px);
             height: 35px;
             display: flex;
@@ -807,12 +727,20 @@
         position: relative;
 
         .box-heading {
-            font-size: 18px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             left: 0;
-            color: #333333;
+            color: #E33A3C;
+            font-weight: $font-weight-semibold;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+
+            i {
+                font-size: 18px;
+                margin-right: 5px;
+            }
 
             .heading:hover {
                 color: unset !important;
@@ -823,7 +751,7 @@
             display: flex;
             justify-content: flex-start;
             flex-flow: row wrap;
-            padding-left: 44px;
+            padding-left: 84px;
 
             a {
                 border: 1px solid #dee2e6;
@@ -882,11 +810,9 @@
                 margin-top: $spacer-0;
             }
 
-            &__meta {
-            }
+            &__meta {}
 
-            &__summary {
-            }
+            &__summary {}
 
             &:first-child {
                 margin-top: 0;
@@ -1097,12 +1023,13 @@
         font-size: 18px;
         line-height: 28px;
         color: #333;
+        margin-bottom: 50px;
 
-        > h1,
-        > h2,
-        > h3,
-        > h4,
-        > h5 {
+        >h1,
+        >h2,
+        >h3,
+        >h4,
+        >h5 {
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -1113,7 +1040,7 @@
             font-weight: 700;
         }
 
-        > *,
+        >*,
         p {
             margin-top: 20px !important;
             font-weight: $font-weight-normal;
@@ -1122,7 +1049,7 @@
             color: #333333;
         }
 
-        > *:not(table.picture) {
+        >*:not(table.picture) {
             width: 770px;
             margin: 0 auto;
         }
@@ -1153,7 +1080,7 @@
             >ins // >figure,
 
             // >table,
-            {
+                {
                 margin: $spacer-3 auto 0;
             }
         }
@@ -1201,9 +1128,9 @@
             }
         }
 
-        & + .image-group-2,
-        & + .image-group-3,
-        & + .image-group-4 {
+        &+.image-group-2,
+        &+.image-group-3,
+        &+.image-group-4 {
             margin-top: 4px;
         }
     }
@@ -1281,7 +1208,7 @@
         margin: 0 auto;
         margin-top: 24px;
 
-        > * {
+        >* {
             max-width: 825px;
             margin: 0 auto;
 
@@ -1292,7 +1219,7 @@
         }
 
         .article__body {
-            > * {
+            >* {
                 max-width: 825px;
                 margin: 0 auto;
 
@@ -1489,7 +1416,7 @@
 
 .longform-page {
     .site-body {
-        > .container:first-child {
+        >.container:first-child {
             width: 100% !important;
             max-width: 100% !important;
         }
@@ -1549,7 +1476,7 @@
     }
 }
 
-.chapter-breadcrumb + .box-heading {
+.chapter-breadcrumb+.box-heading {
     width: 660px;
     margin: 0 auto;
 }
@@ -1576,7 +1503,8 @@
         }
 
         &__meta {
-            > *,
+
+            >*,
             a {
                 color: $gray-200;
             }
@@ -1585,8 +1513,7 @@
             .mail {
                 background-color: $gray-600;
 
-                i {
-                }
+                i {}
             }
         }
 
@@ -1649,4 +1576,3 @@
         }
     }
 }
-

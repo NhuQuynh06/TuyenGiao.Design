@@ -221,15 +221,30 @@
 
         .wrapper {
             width: 270px;
+            display: block;
         }
 
-        ul a {
-            font-weight: $font-weight-normal;
-            font-size: 13px;
-            line-height: 20px;
-            color: #666666;
-            display: block;
-            
+        ul {
+            margin-bottom: 20px;
+
+            li:nth-child(2) {
+                margin-top: 4px;
+            }
+
+            a {
+                font-weight: $font-weight-normal;
+                font-size: 13px;
+                line-height: 20px;
+                color: #666666;
+                display: block;
+                padding: 4px 0;
+                text-transform: none;
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+            }
         }
 
         .cate {
@@ -237,6 +252,8 @@
             font-size: 16px;
             line-height: 24px;
             color: #413836;
+            background: transparent;
+            padding: 0;
         }
     }
 }

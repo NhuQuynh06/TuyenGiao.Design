@@ -27,21 +27,21 @@
             text-indent: -9999px;
         }
 
-        &:hover {
-            overflow: hidden;
+        // &:hover {
+        //     overflow: hidden;
 
-            img {
-                -webkit-transform: scale($rate-zoom);
-                /* Safari and Chrome */
-                -moz-transform: scale($rate-zoom);
-                /* Firefox */
-                -ms-transform: scale($rate-zoom);
-                /* IE 9 */
-                -o-transform: scale($rate-zoom);
-                /* Opera */
-                transform: scale($rate-zoom);
-            }
-        }
+        //     img {
+        //         -webkit-transform: scale($rate-zoom);
+        //         /* Safari and Chrome */
+        //         -moz-transform: scale($rate-zoom);
+        //         /* Firefox */
+        //         -ms-transform: scale($rate-zoom);
+        //         /* IE 9 */
+        //         -o-transform: scale($rate-zoom);
+        //         /* Opera */
+        //         transform: scale($rate-zoom);
+        //     }
+        // }
 
     }
 
