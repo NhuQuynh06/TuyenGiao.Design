@@ -7,6 +7,11 @@
     color: #413836;
     position: relative;
     padding-left: 18px;
+    transform: 0.5s;
+    
+    &:hover {
+        color: #e33a3c !important;
+    }
 
     &::before {
         position: absolute;
