@@ -8,7 +8,7 @@
     position: relative;
     padding-left: 18px;
     transform: 0.5s;
-    
+
     &:hover {
         color: #e33a3c !important;
     }
@@ -25,6 +25,7 @@
         transform: translateY(-50%);
     }
 }
+
 @mixin bottom-heading {
     position: relative;
     width: 100%;
@@ -33,7 +34,7 @@
         position: absolute;
         content: "";
         width: 100%;
-        border: 1px solid #413836;
+        border-bottom: 1px solid #413836;
         bottom: 8px;
         right: 0;
     }
@@ -53,14 +54,14 @@
     display: block;
 
     &::after {
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: #fff;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 10px;
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 10px;
     }
 }

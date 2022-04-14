@@ -510,6 +510,7 @@ body {
 .box-calendar {
   background: #f7f7f7;
   border-radius: 3px;
+  margin-bottom: 30px;
 
   .heading {
     @include read-heading();
@@ -617,6 +618,17 @@ body {
 
       .icon-video {
         background: url(../img/icon-player.png) rgba(0, 0, 0, 0.3) center right 24px/26px no-repeat !important;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        border-radius: 50%;
+        top: 293px;
+        left: 20px;
+      }
+
+      .icon-camera {
+        background: url(../img/icon-camera_ver2.png) rgba(0, 0, 0, 0.3) center center/26px no-repeat !important;
         width: 80px;
         height: 80px;
         border: 1px solid #FFFFFF;
@@ -789,6 +801,8 @@ body {
 
   .box-heading {
     margin-bottom: 13px;
+    width: 260px;
+    overflow: hidden;
   }
 
   .meta {
