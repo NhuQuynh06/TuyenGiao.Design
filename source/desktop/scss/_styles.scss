@@ -24,6 +24,7 @@
 .promo-wrapper {
   margin-bottom: 30px;
   text-align: center;
+  width: 100%;
 }
 
 .directions-wrapper {
@@ -64,7 +65,8 @@
       top: 0;
     }
 
-    &.active {
+    &.active,
+    &:hover {
       color: #E33A3C;
     }
   }
@@ -379,6 +381,13 @@ body {
   }
 }
 
+.catepage-wrapper {
+  .box-timeline {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
 .searchpage-wrapper {
   .box-timeline {
     padding-top: 0;
@@ -607,7 +616,7 @@ body {
       }
 
       .icon-video {
-        background: url(../img/icon-player.png) rgba(0, 0, 0, 0.3) center center/30px no-repeat !important;
+        background: url(../img/icon-player.png) rgba(0, 0, 0, 0.3) center right 24px/26px no-repeat !important;
         width: 80px;
         height: 80px;
         border: 1px solid #FFFFFF;
@@ -1335,6 +1344,7 @@ body {
       display: block;
       font-size: 0;
       margin-left: 20px;
+      cursor: pointer;
 
       &:first-child {
         margin-left: 0;
