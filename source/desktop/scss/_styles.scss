@@ -1239,3 +1239,130 @@ body {
     }
   }
 }
+
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 30px;
+
+  .title {
+    font-size: 24px;
+    color: $primary;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: $font-weight-medium;
+  }
+
+  .register {
+    color: #E33A3C;
+    font-weight: $font-weight-bold;
+  }
+
+  form-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+
+    input {
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 30px;
+    }
+
+    i {
+      color: #555;
+      font-size: 16px;
+      margin-right: 10px;
+      padding: 9px 12px;
+      background-color: #eee;
+    }
+  }
+
+  .forget-password {
+    color: #E33A3C;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  .social-wrapper {
+    p {
+      font-style: italic;
+      color: #222222;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        left: 240px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        left: -240px;
+      }
+    }
+
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >* {
+      width: 35px;
+      height: 35px;
+      border-radius: 6px;
+      display: block;
+      font-size: 0;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .facebook {
+      background: url(../img/facebook.png) center center/35px no-repeat;
+    }
+
+    .google {
+      background: url(../img/google.png) center center/35px no-repeat;
+    }
+
+    .nps {
+      background: url(../img/nps.png) center center/35px no-repeat;
+    }
+  }
+
+  .btn-login {
+    background-color: #E33A3C;
+    color: #fff;
+    height: 34px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

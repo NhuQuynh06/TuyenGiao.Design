@@ -16,7 +16,7 @@
 <body>
   <div class="wrapper-page">
     <!-- site header -->
-    <header class="page-header">
+    <header class="site-header">
     <div class="container">
         <div class="top-header">
             <time class="time">Tuesday, 9/11/2021</time>
@@ -26,7 +26,7 @@
                     <i class="fal fa-search"></i>
                 </div>
                 <ul class="account-wrapper">
-                    <li><a href="" data-toggle="modal" data-target="#loginModal">Đăng ký</a>
+                    <li><a href="">Đăng ký</a>
                     </li>
                     <li><a href="">Đăng nhập</a></li>
                 </ul>
@@ -1604,85 +1604,6 @@
     </div>
 </footer>
 
-  </div>
-
-  <!-- modal -->
-  <div class="modal fade show" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true" style="display: block;">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div> -->
-        <div class="modal-body">
-          <div class="panel panel-default">
-
-            <div class="panel-body center-block">
-
-              <div class="row text-center">
-                <h3 class="">Đăng nhập hoặc
-                  <a href="https://account.vnanet.vn/Registration/Account/Register?signin=91835d94aee40cd1be78f45744a876a0"
-                    id="Đăngký"><strong>Đăng ký</strong></a>
-                </h3>
-              </div>
-            </div>
-            <div class="panel-body center-block" style="height:100%">
-              <form name="form" method="post" action="/core/login?signin=91835d94aee40cd1be78f45744a876a0" class="">
-                <input type="hidden" name="idsrv.xsrf"
-                  value="aFdDaLhPv4ul6xy6BLqf_6I0hwnrBrEkGdS8KojFq9jRu2KumykIwXLh0KmvVzmXwTgSLNHJLx36ndquuslNX3SXlbgbAlF0Unbsg5dXuz4">
-
-                <div class="form-group input-group">
-
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-
-                  <input type="text" class="input-text form-control" id="username" required="" name="username"
-                    data-mailcheckfield=".email-suggestion" autofocus="" ng-model="model.username"
-                    placeholder="Tên đăng nhập" maxlength="100">
-
-                </div>
-
-                <div class="form-group input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-
-                  <input class="input-text form-control" required="" id="password" name="password" type="password"
-                    placeholder="Mật khẩu" ng-model="model.password" maxlength="100" autocomplete="off">
-                </div>
-
-
-                <input class="btn btn-primary btn-block" type="submit" id="login" ng-disabled="form.$invalid"
-                  value="Đăng nhập">
-                <div class="form-group input-group mt-3">
-                  <a href="https://account.vnanet.vn/Profile/Account/ForgotPassword?signin=91835d94aee40cd1be78f45744a876a0"
-                    id="Quênmậtkhẩu?">Quên mật khẩu ?</a> </div>
-                <div class="or-seperator"><i>Hoặc đăng nhập với</i></div>
-
-                <div class="row btn-social mt-2 text-center">
-                  <span class="col-md-4  col-sm-4 col-xs-4"><a
-                      href="https://vnaid.vnanet.vn/core/external?provider=Facebook&amp;signin=91835d94aee40cd1be78f45744a876a0"
-                      class=""> <img src="/Images/facebook.png" style="width:35px;height:35px "
-                        class="img-rounded"></a></span>
-                  <span class="col-md-4  col-sm-4 col-xs-4"><a
-                      href="https://vnaid.vnanet.vn/core/external?provider=Google&amp;signin=91835d94aee40cd1be78f45744a876a0"
-                      class=""> <img src="/Images/google.png" style="width:35px;height:35px "
-                        class="img-rounded"></a></span>
-                  <span class="col-md-4  col-sm-4 col-xs-4"><a
-                      href="https://vnaid.vnanet.vn/core/external?provider=TTXVN&amp;signin=91835d94aee40cd1be78f45744a876a0"
-                      class=""> <img src="/Images/nps.png" style="width:35px;height:35px "
-                        class="img-rounded"></a></span>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
   </div>
 
 

@@ -1,4 +1,4 @@
-.page-header {
+.site-header {
     height: 205px;
     width: 100%;
     display: block;
@@ -255,5 +255,20 @@
             background: transparent;
             padding: 0;
         }
+    }
+}
+
+.site-header-login {
+    background: #E33A3C;
+    height: 51px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        display: block;
+        width: 121px;
+        height: 26px;
+        font-size: 0;
+        background: url(../img/logo-login.png) center center/121px no-repeat;
     }
 }
