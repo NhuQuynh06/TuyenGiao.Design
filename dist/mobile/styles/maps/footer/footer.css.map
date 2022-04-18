@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer/footer.scss"],"names":[],"mappings":"AAAA,aACI,iBAAkB,QAClB,SAAU,KACV,QAAS,KAAA,KACT,SAAU","file":"../../component/footer/footer.css","sourcesContent":[".page-footer {\n    background-color: #e7e7e7;\n    overflow: auto;\n    padding: 30px 20px;\n    position: relative;\n}"]}

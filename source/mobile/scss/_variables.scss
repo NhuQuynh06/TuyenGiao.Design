@@ -4,18 +4,17 @@ html {
 }
 
 $body-bg: #fff;
-$body-color: #343a40;
-$font-family-sans-serif: "NotoSerif";
-$font-family-serif: "NotoSerif";
+$body-color: #413836;
+$font-family-sans-serif: 'Roboto';
+$font-family-serif: 'Roboto';
 // sans-serif;
 $font-size-base: 1.4rem; // base on paragraphs in detail page
 // $line-height-base: 2.2;
 
 
 // add color to color maps
-$primary: #BD1723;
-$primary-thoinay: #0073bf;
-$secondary: #6C757D;
+$primary: #413836;
+$secondary: #888888;
 $third: #DC3545;
 $dark: #212529;
 $light: #e9ecef;
@@ -1211,10 +1210,12 @@ $caret-width: .25em;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-weight-medium:          500;
-$font-weight-semibold:        600;
-$font-weight-bold:            700;
-$font-weight-bolder:          800;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
 
 $h1-font-size: $font-size-base * 1.9;
 $h2-font-size: $font-size-base * 1.6;

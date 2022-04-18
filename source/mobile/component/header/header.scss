@@ -1,10 +1,120 @@
 .page-header {
+    height: 50px;
+    background: url(../img/bg-header.png) center center/100% 100% no-repeat;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 50px;
+    }
+
+    i {
+        font-weight: $font-weight-light;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &.active {
+            background: #f8c100;
+            color: #413836;
+        }
+    }
+}
+
+.mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 0;
+}
+
+.navigation,
+.search-wrapper {
+    display: none;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
     background-color: #fff;
-    left: 0;
-    position: sticky;
-    top: 0;
-    transition: all 0.1s ease-in;
-    width: 100vw;
-    z-index: 1030;
-    border-bottom: 1px solid #e7e7e7;
+    border-radius: 0 0 30px 30px;
+}
+
+.search-wrapper {
+    input {
+        width: 335px;
+        height: 50px;
+        background: #eeeeee;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        padding: 10px 20px 10px 46px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #888888;
+        }
+    }
+
+    .region-search {
+        position: relative;
+        margin: 10px 20px;
+    }
+
+    i {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+}
+
+.menu {
+    margin: 6px 20px;
+    > li {
+        a {
+            font-weight: $font-weight-medium;
+            font-size: 16px;
+            line-height: 24px;
+            color: #413836;
+            padding: 10px 0;
+            display: block;
+        }
+    }
+    .sub-menu {
+        margin-top: -8px;
+
+        a {
+            font-weight: $font-weight-normal;
+            font-size: 13px;
+            line-height: 20px;
+            color: #666666;
+            position: relative;
+            padding: 8px 0 8px 10px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 4px;
+                top: 15px;
+                border-radius: 50%;
+                left: 0;
+                background-color: #e33a3c;
+            }
+        }
+    }
 }
