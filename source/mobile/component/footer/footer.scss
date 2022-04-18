@@ -1,6 +1,31 @@
 .page-footer {
-    background-color: #e7e7e7;
-    overflow: auto;
-    padding: 30px 20px;
-    position: relative;
+    padding: 16px 20px 24px;
+    background: #6B0001;
+    text-align: center;
+
+    .logo {
+        width: 210px;
+        height: 56px;
+        font-size: 0;
+        display: block;
+        background: url(../img/logo.png) center center/210px no-repeat;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .wrapper {
+        margin-bottom: 20px;
+    }
+
+    span {
+        font-weight: $font-weight-normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #DDDDDD;
+        display: block;
+    }
+
+    .bold {
+        font-weight: $font-weight-bold;
+    }
 }

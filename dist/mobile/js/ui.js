@@ -1,22 +1,48 @@
 
+
+// show hide navigation 
+var showHamburger = true
 $('.page-header .hamburger').click(function () {
-    $('.search-wrapper').css('display', 'none');
-    $('.navigation').slideToggle();
-    $('body').toggleClass('no-scroll');
-})
+    $('.search-wrapper').slideUp("slow")
+    showSearch = true;
+
+    if (showHamburger) {
+        $('.mask').css('display', 'block');
+        $('.navigation').slideDown("slow");
+        showHamburger = false;
+    } else {
+        $('.mask').css('display', 'none');
+        $('.navigation').slideUp("slow");
+        showHamburger = true;
+    }
+});
+
+var showSearch = true;
 $('.page-header .search').click(function () {
-    $('.navigation').css('display', 'none');
-    $('.search-wrapper').slideToggle();
-    $('body').toggleClass('no-scroll');
+    $('.navigation').slideUp("slow");
+    showHamburger = true;
+
+    if (showSearch) {
+        $('.mask').css('display', 'block');
+        $('.search-wrapper').slideDown("slow");
+        showSearch = false;
+    } else {
+        $('.mask').css('display', 'none');
+        $('.search-wrapper').slideUp("slow");
+        showSearch = true;
+    }
+});
+
+$('.mask').click(function () {
+    $('.mask').css('display', 'none');
+    $('.search-wrapper').slideUp("slow");
+    $('.navigation').slideUp("slow");
+    showSearch = true;
+    showHamburger = true;
 })
-$('.navigation .mask').click(function () {
-    $('.navigation').slideToggle();
-    $('body').toggleClass('no-scroll');
-})
-$('.search-wrapper .mask').click(function () {
-    $('.search-wrapper').slideToggle();
-    $('body').toggleClass('no-scroll');
-})
+
+// end
+
 
 // active nav-tab
 const $navTabLink = $('.nav-tab .nav-tab__link a');
@@ -31,4 +57,15 @@ $(".nav-tab .nav-tab__link a").click(function (e) {
     $this.addClass('active');
     $navTabContent.find('.tab-pane').removeClass('active')
     $('.nav-tab .nav-tab__content .' + chosenTab).addClass('active');
+});
+
+// slick slider
+$(document).ready(function () {
+    $('.box-news .box-content').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: false,
+    });
 });

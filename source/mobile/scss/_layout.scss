@@ -1,4 +1,14 @@
 // > layout
+body {
+    // width: 375px;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
 .container {
     padding: 0 20px;
+}
+
+.site-body {
+    margin-top: 50px;
 }

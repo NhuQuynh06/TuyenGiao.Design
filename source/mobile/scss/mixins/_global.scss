@@ -1,13 +1,16 @@
 @mixin style-heading {
     font-family: "Raleway";
     font-weight: $font-weight-bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
     text-transform: uppercase;
     color: #413836;
     position: relative;
     padding-left: 18px;
-    transform: 0.5s;
+    transition: 0.5s;
+    z-index: 1;
+    padding-right: 7px;
+    background-color: #fff;
 
     &:hover {
         color: #e33a3c !important;
@@ -56,8 +59,8 @@
     &::after {
         position: absolute;
         content: "";
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         background-color: #fff;
         top: 50%;
