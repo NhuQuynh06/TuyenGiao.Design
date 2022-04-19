@@ -7,12 +7,14 @@ $('.page-header .hamburger').click(function () {
     showSearch = true;
 
     if (showHamburger) {
-        $('.mask').css('display', 'block');
+        $('.mask-header').css('display', 'block');
         $('.navigation').slideDown("slow");
+        $('body').addClass("no-scroll");
         showHamburger = false;
     } else {
-        $('.mask').css('display', 'none');
+        $('.mask-header').css('display', 'none');
         $('.navigation').slideUp("slow");
+        $('body').removeClass("no-scroll");
         showHamburger = true;
     }
 });
@@ -23,18 +25,20 @@ $('.page-header .search').click(function () {
     showHamburger = true;
 
     if (showSearch) {
-        $('.mask').css('display', 'block');
+        $('.mask-header').css('display', 'block');
         $('.search-wrapper').slideDown("slow");
+        $('body').addClass("no-scroll");
         showSearch = false;
     } else {
-        $('.mask').css('display', 'none');
+        $('.mask-header').css('display', 'none');
         $('.search-wrapper').slideUp("slow");
+        $('body').removeClass("no-scroll");
         showSearch = true;
     }
 });
 
-$('.mask').click(function () {
-    $('.mask').css('display', 'none');
+$('.mask-header').click(function () {
+    $('.mask-header').css('display', 'none');
     $('.search-wrapper').slideUp("slow");
     $('.navigation').slideUp("slow");
     showSearch = true;
@@ -42,6 +46,23 @@ $('.mask').click(function () {
 })
 
 // end
+
+// show Breadcrumbs 
+var showBreadcrumbs = true;
+$('.breadcrumbs-wrapper').click(function () {
+    // console.log('click');
+    if (showBreadcrumbs) {
+        $('.breadcrumbs-wrapper .cate').slideDown("slow");
+        $('.breadcrumbs-wrapper .mask-breadcrumbs').css('display', 'block');
+        $('body').addClass("no-scroll");
+        showBreadcrumbs = false;
+    } else {
+        $('.breadcrumbs-wrapper .cate').slideUp("slow");
+        $('.breadcrumbs-wrapper .mask-breadcrumbs').css('display', 'none');
+        $('body').removeClass("no-scroll");
+        showBreadcrumbs = true;
+    }
+});
 
 
 // active nav-tab

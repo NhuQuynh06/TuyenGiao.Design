@@ -1,1 +1,0 @@
-{"version":3,"sources":["header/header.scss"],"names":[],"mappings":"AAAA,aACI,OAAQ,KACR,WAAY,0BAA0B,OAAO,MAAA,CAAA,KAAY","file":"../../component/header/header.css","sourcesContent":[".page-header {\n    height: 50px;\n    background: url(../img/bg-header.png) center center/100% no-repeat;\n}"]}
