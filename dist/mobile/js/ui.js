@@ -47,6 +47,7 @@ $('.mask-header').click(function () {
 
 // end
 
+
 // show Breadcrumbs 
 var showBreadcrumbs = true;
 $('.breadcrumbs-wrapper').click(function () {
@@ -64,6 +65,18 @@ $('.breadcrumbs-wrapper').click(function () {
     }
 });
 
+
+// show sub menu
+var showSubMenu = true;
+$(".has-sub").click(function () {
+    if (showSubMenu) {
+        $(this).children("ul").slideToggle();
+        showSubMenu = false;
+    } else {
+        $(this).children("ul").slideToggle();
+        showSubMenu = true;
+    }
+});
 
 // active nav-tab
 const $navTabLink = $('.nav-tab .nav-tab__link a');

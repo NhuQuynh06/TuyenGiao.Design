@@ -114,11 +114,17 @@
             color: #413836;
             padding: 10px 0;
             display: block;
+            width: calc(100% - 30px);
         }
+    }
+
+    .has-sub {
+        background: url(../img/chevron-down.png) top 18px right/13px no-repeat;
     }
 
     .sub-menu {
         margin-top: -8px;
+        display: none;
 
         a {
             font-weight: $font-weight-normal;
@@ -139,5 +145,20 @@
                 background-color: #e33a3c;
             }
         }
+    }
+}
+
+.site-header-login {
+    background: #E33A3C;
+    height: 51px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        display: block;
+        width: 121px;
+        height: 26px;
+        font-size: 0;
+        background: url(../img/logo-login.png) center center/121px no-repeat;
     }
 }
