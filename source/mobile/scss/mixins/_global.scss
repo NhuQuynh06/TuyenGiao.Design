@@ -1,7 +1,7 @@
 @mixin style-heading {
     font-family: "Raleway";
     font-weight: $font-weight-bold;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
     color: #413836;
@@ -11,6 +11,10 @@
     z-index: 1;
     padding-right: 7px;
     background-color: #fff;
+
+    @media (min-width:375px) {
+        font-size: 22px;
+    }
 
     &:hover {
         color: #e33a3c !important;

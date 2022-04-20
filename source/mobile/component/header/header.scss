@@ -4,6 +4,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 768px;
     z-index: 2;
 
     .container {
@@ -66,7 +67,7 @@
     // height: 100%;
     top: 50px;
     background-color: #fff;
-    // border-radius: 0 0 30px 30px;
+    border-radius: 0 0 3px 3px;
 }
 
 .search-wrapper {

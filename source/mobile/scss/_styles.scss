@@ -382,12 +382,16 @@ body {
       font-weight: $font-weight-normal;
       font-size: 14px;
       line-height: 16px;
-      width: 105px;
+      width: 85px;
       height: 34px;
       color: #666666;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (min-width:375px) {
+        width: 105px;
+      }
 
       &.active {
         background: #E33A3C;
@@ -417,7 +421,8 @@ body {
         border: 1px solid #FFFFFF;
         position: absolute;
         border-radius: 50%;
-        top: 110px;
+        top: auto;
+        bottom: 20px;
         left: 20px;
       }
 
@@ -428,7 +433,8 @@ body {
         border: 1px solid #FFFFFF;
         position: absolute;
         border-radius: 50%;
-        top: 110px;
+        top: auto;
+        bottom: 20px;
         left: 20px;
       }
 
