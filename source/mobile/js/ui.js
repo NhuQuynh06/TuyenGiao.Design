@@ -71,9 +71,11 @@ var showSubMenu = true;
 $(".has-sub").click(function () {
     if (showSubMenu) {
         $(this).children("ul").slideToggle();
+        $('.icon-arrow').addClass('rotate');
         showSubMenu = false;
     } else {
         $(this).children("ul").slideToggle();
+        $('.icon-arrow').removeClass('rotate');
         showSubMenu = true;
     }
 });
