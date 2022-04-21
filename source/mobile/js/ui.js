@@ -105,3 +105,20 @@ $(document).ready(function () {
         arrows: false,
     });
 });
+
+// back to top
+
+var backToTop = $('.back-to-top')
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+        backToTop.fadeIn();
+    } else {
+        backToTop.fadeOut();
+    }
+});
+
+backToTop.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '600');
+});
+
