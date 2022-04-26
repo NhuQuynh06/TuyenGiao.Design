@@ -32,4 +32,10 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
+
+    $('.humburger-wrapper').click(function (e) {
+        e.preventDefault();
+        $('.humburger-wrapper .nav-sub').toggleClass('show');
+    })
+
 });
