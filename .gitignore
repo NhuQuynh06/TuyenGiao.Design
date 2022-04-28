@@ -7,3 +7,4 @@ package-lock.json
 #Files and directories in "node_modules"
 node_modules/
 node_modules.nosync/
+source/
