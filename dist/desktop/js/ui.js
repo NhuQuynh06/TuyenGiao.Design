@@ -14,6 +14,21 @@ $(document).ready(function () {
         $('.nav-tab .nav-tab__content .' + chosenTab).addClass('active');
     });
 
+    //Click event scroll to top button jquery
+    var backToTop = $('.back-to-top');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+            backToTop.addClass('show');
+        } else {
+            backToTop.removeClass('show');
+        }
+    });
+    backToTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+    
     // slider-for, slider-nav
 
     $('.slider-for').slick({

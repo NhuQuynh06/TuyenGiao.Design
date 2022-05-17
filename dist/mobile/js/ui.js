@@ -106,19 +106,18 @@ $(document).ready(function () {
     });
 });
 
-// back to top
+//Click event scroll to top button jquery
+var backToTop = $('.back-to-top');
 
-var backToTop = $('.back-to-top')
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 500) {
-        backToTop.fadeIn();
+    if ($(window).scrollTop() > 200) {
+        backToTop.addClass('show');
     } else {
-        backToTop.fadeOut();
+        backToTop.removeClass('show');
     }
 });
-
-backToTop.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '600');
+backToTop.click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
 });
 
