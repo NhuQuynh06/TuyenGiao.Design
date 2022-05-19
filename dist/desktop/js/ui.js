@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    $('.humburger-wrapper .humburger').click(function (e) {
+        e.preventDefault();
+        $('.humburger-wrapper .nav-sub').toggleClass('show');
+    })
+
     // active nav-tab
     const $navTabLink = $('.nav-tab .nav-tab__link a');
     const $navTabContent = $('.nav-tab .nav-tab__content ');
@@ -28,7 +34,7 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
     });
-    
+
     // slider-for, slider-nav
 
     $('.slider-for').slick({
@@ -63,11 +69,5 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: true
     });
-
-
-    $('.humburger-wrapper').click(function (e) {
-        e.preventDefault();
-        $('.humburger-wrapper .nav-sub').toggleClass('show');
-    })
 
 });
